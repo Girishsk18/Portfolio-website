@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Girish S K — Portfolio</title>
+		<meta
+			name="description"
+			content="Personal portfolio of Girish S K — Computer Science Engineering student, Frontend & Python Developer showcasing skills, projects, and certifications."
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+
+		<link rel="stylesheet" href="css/styles.css?v=2" />
+	</head>
+	<body>
+		<nav id="navbar" class="navbar">
+			<div class="nav-container">
+				<a href="#hero" class="nav-logo">&lt;Girish S K /&gt;</a>
+
+				<button
+					class="hamburger"
+					id="hamburger"
+					aria-label="Toggle navigation"
+				>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+
+				<ul class="nav-menu" id="nav-menu">
+					<li><a href="#hero" class="nav-link active">Home</a></li>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#skills" class="nav-link">Skills</a></li>
+					<li><a href="#projects" class="nav-link">Projects</a></li>
+					<li><a href="#resume" class="nav-link">Resume</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ===================== HERO ===================== -->
+		<section id="hero" class="hero">
+			<div class="hero-bg-effects">
+				<div class="ambient-glow glow-1"></div>
+				<div class="ambient-glow glow-2"></div>
+				<div class="ambient-glow glow-3"></div>
+				<canvas id="bg-canvas" class="bg-canvas"></canvas>
+			</div>
+			<div class="hero-content">
+				<p class="hero-greeting reveal">Hello, I'm</p>
+				<h1 class="hero-name reveal">Girish S K</h1>
+				<h2 class="hero-title">
+					<span id="typewriter"></span><span class="cursor">|</span>
+				</h2>
+				<p class="hero-description reveal">
+					Highly motivated Computer Science engineering student with
+					hands-on experience in Python, Bootstrap, and Frontend.
+					Eager to utilize strong problem-solving and leadership
+					skills to build scalable, secure web applications while
+					growing as a developer and delivering impactful software
+					solutions.
+				</p>
+				<div class="hero-buttons reveal">
+					<a href="#projects" class="btn btn-primary">View My Work</a>
+					<a href="#contact" class="btn btn-outline">Get In Touch</a>
+				</div>
+				<div class="hero-social reveal">
+					<a
+						href="https://github.com/Girishsk18"
+						target="_blank"
+						rel="noopener"
+						aria-label="GitHub"
+						><i class="fab fa-github"></i
+					></a>
+					<a
+						href="https://linkedin.com/Girish-kambar"
+						target="_blank"
+						rel="noopener"
+						aria-label="LinkedIn"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+					
+				</div>
+			</div>
+			<div class="scroll-indicator">
+				<a href="#about" aria-label="Scroll down">
+					<i class="fas fa-chevron-down"></i>
+				</a>
+			</div>
+		</section>
+
+		<!-- ===================== ABOUT ===================== -->
+		<section id="about" class="section about">
+			<div class="container">
+				<h2 class="section-title reveal">
+					About <span class="accent">Me</span>
+				</h2>
+				<div class="section-line reveal"></div>
+				<div class="about-grid">
+					<div class="about-image reveal">
+						<div class="image-wrapper" id="profile-wrapper" title="Click to change profile picture" tabindex="0" role="button" aria-label="Change profile picture">
+							<div class="insta-ring"></div>
+							<div class="insta-avatar-container">
+								<img
+									src="C:\Users\giris\OneDrive\Pictures\Screenshots\Screenshot 2026-08-11 215113.png"
+									alt="Girish S K"
+									class="about-img filter-normal"
+									id="about-profile-img"
+									onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+								/>
+								<div class="image-placeholder" style="display: none;">
+									<i class="fas fa-user-graduate"></i>
+								</div>
+								<div class="avatar-hover-overlay">
+									<i class="fas fa-camera"></i>
+									<span>Change Photo</span>
+								</div>
+							</div>
+							<button type="button" class="avatar-edit-badge" id="avatar-edit-trigger" aria-label="Edit Profile Photo">
+								<i class="fas fa-camera"></i>
+							</button>
+						</div>
+					</div>
+					<div class="about-text">
+						<p class="reveal">
+							I'm a passionate and highly motivated
+							<strong
+								>Computer Science Engineering student</strong
+							>
+							at
+							<strong>Bangalore Technological Institute</strong>
+							with hands-on experience in <strong>Python</strong>,
+							<strong>Bootstrap</strong>, and modern
+							<strong>Frontend</strong> development.
+						</p>
+						<p class="reveal">
+							Eager to utilize strong problem-solving and
+							leadership skills to build scalable, secure web
+							applications while growing as a developer and
+							delivering impactful software solutions. From
+							intelligent AI resume evaluation systems to machine
+							learning classifiers, I love turning complex ideas
+							into intuitive user experiences.
+						</p>
+						<p class="reveal">
+							When I'm not coding, you'll find me exploring
+							emerging technologies, collaborating with fellow
+							developers, and expanding my skill set across
+							machine learning, web frameworks, and cloud
+							computing.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================== SKILLS ===================== -->
+		<section id="skills" class="section skills">
+			<div class="container">
+				<h2 class="section-title reveal">
+					My <span class="accent">Skills</span>
+				</h2>
+				<div class="section-line reveal"></div>
+
+				<div class="skills-grid">
+					<!-- Frontend -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-code"></i>
+							<h3>Frontend</h3>
+						</div>
+						<div class="skill-items">
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>HTML</span>
+									<span>95%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="95"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>JavaScript</span>
+									<span>90%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="90"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Bootstrap &amp; Flexbox</span>
+									<span>90%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="90"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>CSS</span>
+									<span>85%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="85"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>React.js</span>
+									<span>85%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="85"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Backend & Databases -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-server"></i>
+							<h3>Backend &amp; Databases</h3>
+						</div>
+						<div class="skill-items">
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Python</span>
+									<span>85%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="85"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>MySQL</span>
+									<span>80%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="80"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Node.js</span>
+									<span>75%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="75"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Express.js</span>
+									<span>70%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="70"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Machine Learning & Libraries -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-brain"></i>
+							<h3>ML &amp; Libraries</h3>
+						</div>
+						<div class="skill-items">
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Pandas &amp; NumPy</span>
+									<span>85%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="85"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Scikit-learn</span>
+									<span>80%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="80"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Streamlit</span>
+									<span>85%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="85"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>NLTK (NLP)</span>
+									<span>80%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="80"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tools & Platforms -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-tools"></i>
+							<h3>Tools &amp; Platforms</h3>
+						</div>
+						<div class="skill-items">
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Git &amp; GitHub</span>
+									<span>90%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="90"
+									></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Linux / CLI</span>
+									<span>75%</span>
+								</div>
+								<div class="skill-bar">
+									<div
+										class="skill-progress"
+										data-width="75"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Soft Skills -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-users-cog"></i>
+							<h3>Soft Skills</h3>
+						</div>
+						<div class="skill-badges">
+							<span class="skill-badge"
+								><i class="fas fa-tasks"></i> Project
+								Management</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-handshake"></i> Collaborative
+								Development</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-clock"></i> Time
+								Management</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-lightbulb"></i> Problem
+								Solving</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-user-tie"></i>
+								Leadership</span
+							>
+						</div>
+					</div>
+
+					<!-- Languages (Spoken) -->
+					<div class="skill-category reveal">
+						<div class="skill-category-header">
+							<i class="fas fa-language"></i>
+							<h3>Languages</h3>
+						</div>
+						<div class="skill-badges">
+							<span class="skill-badge"
+								><i class="fas fa-globe"></i> English</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-globe-asia"></i> Hindi</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-map-pin"></i> Kannada</span
+							>
+							<span class="skill-badge"
+								><i class="fas fa-map-pin"></i> Marathi</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================== PROJECTS ===================== -->
+		<section id="projects" class="section projects">
+			<div class="container">
+				<h2 class="section-title reveal">
+					Featured <span class="accent">Projects</span>
+				</h2>
+				<div class="section-line reveal"></div>
+
+				<div class="projects-grid">
+					<!-- Project 1: Aira: Ai Based Resume Analyzer -->
+					<div class="project-card reveal">
+						<div class="project-image">
+							<div
+								class="project-image-placeholder"
+								style="--hue: 195"
+							>
+								<i class="fas fa-file-invoice"></i>
+							</div>
+							<div class="project-overlay">
+								<div class="project-links">
+									<a
+										href="https://github.com/Girishsk18"
+										target="_blank"
+										rel="noopener"
+										aria-label="GitHub Repository"
+										><i class="fab fa-github"></i
+									></a>
+									<a
+										href="#projects"
+										aria-label="View Details"
+										><i class="fas fa-external-link-alt"></i
+									></a>
+								</div>
+							</div>
+						</div>
+						<div class="project-info">
+							<div class="project-role">
+								<i class="fas fa-user-tag"></i> Frontend
+								Developer
+							</div>
+							<h3>Aira: AI Based Resume Analyzer</h3>
+							<p>
+								An intelligent application that evaluates
+								resumes using Artificial Intelligence and
+								Natural Language Processing (NLP). It
+								automatically extracts personal information,
+								education, skills, experience, and projects,
+								compares content with job requirements, and
+								provides an objective resume score with
+								personalized suggestions to enhance the resume.
+							</p>
+							<div class="project-tags">
+								<span>HTML</span>
+								<span>CSS</span>
+								<span>JavaScript</span>
+								<span>Pandas</span>
+								<span>Scikit-learn</span>
+								<span>NLP / AI</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 2: Email spam classifier -->
+					<div class="project-card reveal">
+						<div class="project-image">
+							<div
+								class="project-image-placeholder"
+								style="--hue: 220"
+							>
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div class="project-overlay">
+								<div class="project-links">
+									<a
+										href="https://github.com/Girishsk18"
+										target="_blank"
+										rel="noopener"
+										aria-label="GitHub Repository"
+										><i class="fab fa-github"></i
+									></a>
+									<a
+										href="#projects"
+										aria-label="View Details"
+										><i class="fas fa-external-link-alt"></i
+									></a>
+								</div>
+							</div>
+						</div>
+						<div class="project-info">
+							<div class="project-role">
+								<i class="fas fa-cogs"></i> Backend &amp; Model
+								Training
+							</div>
+							<h3>Email Spam Classifier</h3>
+							<p>
+								Developed an Email Spam Classifier using Python
+								and Machine Learning to accurately identify spam
+								and legitimate emails. Preprocessed text using
+								NLTK techniques (tokenization, stop-word
+								removal, stemming), trained a Scikit-learn model
+								on labeled email datasets, and built an
+								interactive Streamlit web interface for fast
+								real-time prediction.
+							</p>
+							<div class="project-tags">
+								<span>Python</span>
+								<span>Streamlit</span>
+								<span>NLTK</span>
+								<span>NumPy</span>
+								<span>Pandas</span>
+								<span>Scikit-learn</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================== RESUME ===================== -->
+		<section id="resume" class="section resume">
+			<div class="container">
+				<h2 class="section-title reveal">
+					My <span class="accent">Resume</span>
+				</h2>
+				<div class="section-line reveal"></div>
+
+				<div class="resume-grid">
+					<!-- Experience -->
+					<div class="resume-column">
+						<h3 class="resume-column-title reveal">
+							<i class="fas fa-briefcase"></i> Experience &amp;
+							Project Roles
+						</h3>
+						<div class="timeline">
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">
+										Oct 2025 — Present
+									</div>
+									<h4>Frontend Developer</h4>
+									<p class="timeline-company">
+										Aira: AI Based Resume Analyzer
+									</p>
+									<p>
+										Architected and implemented responsive
+										frontend interfaces for AI/NLP-powered
+										resume evaluation, automated detail
+										extraction, candidate-job matching, and
+										dynamic scoring analytics.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">
+										Apr 2026 — Jun 2026
+									</div>
+									<h4>Backend &amp; Model Training</h4>
+									<p class="timeline-company">
+										Email Spam Classifier
+									</p>
+									<p>
+										Developed end-to-end NLP preprocessing
+										pipelines using NLTK, trained machine
+										learning classification algorithms with
+										Scikit-learn, and deployed interactive
+										Streamlit interfaces.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">
+										2026 — Present
+									</div>
+									<h4>Full-Stack Developer</h4>
+									<p class="timeline-company">
+										Tech Solutions Inc.
+									</p>
+									<p>
+										Led development of customer-facing web
+										applications using React and Node.js.
+										Improved load times by 40% through
+										optimization.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2024 — 2025</div>
+									<h4>Frontend Developer</h4>
+									<p class="timeline-company">Nextwave</p>
+									<p>
+										Built responsive UIs for 10+ client
+										projects. Implemented design systems and
+										component libraries.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Education & Certifications -->
+					<div class="resume-column">
+						<h3 class="resume-column-title reveal">
+							<i class="fas fa-graduation-cap"></i> Education
+							&amp; Certifications
+						</h3>
+						<div class="timeline">
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2023 — 2027</div>
+									<h4>
+										B.E in Computer Science and Engineering
+									</h4>
+									<p class="timeline-company">
+										Bangalore Technological Institute |
+										Bangalore-560035
+									</p>
+									<p>
+										Focused on software engineering, data
+										structures, algorithms, machine
+										learning, and full-stack web
+										technologies.
+									</p>
+									<span class="timeline-grade"
+										><i class="fas fa-star"></i> CGPA:
+										8.0</span
+									>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">
+										Passing Year: 2023
+									</div>
+									<h4>12th Grade (Pre-University)</h4>
+									<p class="timeline-company">
+										Pre-University Education
+									</p>
+									<p>
+										Academic focus on Science, Physics,
+										Chemistry, and Mathematics.
+									</p>
+									<span class="timeline-grade"
+										><i class="fas fa-award"></i>
+										Percentage: 89.3%</span
+									>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">
+										Passing Year: 2020
+									</div>
+									<h4>10th Grade (Secondary Education)</h4>
+									<p class="timeline-company">
+										Secondary School Education
+									</p>
+									<p>
+										Foundational academics with distinction
+										in mathematics and science.
+									</p>
+									<span class="timeline-grade"
+										><i class="fas fa-award"></i>
+										Percentage: 89.6%</span
+									>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2025</div>
+									<h4>Cloud Computing Certification</h4>
+									<p class="timeline-company">NPTEL</p>
+									<p>
+										Certified in cloud computing
+										fundamentals, virtualization,
+										distributed storage, and cloud
+										infrastructure architectures.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2025</div>
+									<h4>Build Own Static Websites</h4>
+									<p class="timeline-company">Nextwave</p>
+									<p>
+										Comprehensive certification covering
+										HTML5, CSS3, Flexbox, Bootstrap, and
+										responsive UI design practices.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2023</div>
+									<h4>Full-Stack Web Development</h4>
+									<p class="timeline-company">
+										Online Certification
+									</p>
+									<p>
+										Completed an intensive bootcamp covering
+										MERN stack, RESTful APIs, and cloud
+										deployment.
+									</p>
+								</div>
+							</div>
+							<div class="timeline-item reveal">
+								<div class="timeline-dot"></div>
+								<div class="timeline-content">
+									<div class="timeline-date">2022</div>
+									<h4>AWS Cloud Practitioner</h4>
+									<p class="timeline-company">
+										Amazon Web Services
+									</p>
+									<p>
+										Certified in cloud concepts, core AWS
+										services, security, architecture, and
+										pricing models.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================== CONTACT ===================== -->
+		<section id="contact" class="section contact">
+			<div class="container">
+				<h2 class="section-title reveal">
+					Get In <span class="accent">Touch</span>
+				</h2>
+				<div class="section-line reveal"></div>
+
+				<div class="contact-grid">
+					<form class="contact-form reveal" id="contact-form">
+						<div class="form-group">
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder=" "
+								required
+							/>
+							<label for="name">Your Name</label>
+						</div>
+						<div class="form-group">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder=" "
+								required
+							/>
+							<label for="email">Your Email</label>
+						</div>
+						<div class="form-group">
+							<input
+								type="text"
+								id="subject"
+								name="subject"
+								placeholder=" "
+								required
+							/>
+							<label for="subject">Subject</label>
+						</div>
+						<div class="form-group">
+							<textarea
+								id="message"
+								name="message"
+								rows="5"
+								placeholder=" "
+								required
+							></textarea>
+							<label for="message">Your Message</label>
+						</div>
+						<button
+							type="submit"
+							class="btn btn-primary btn-submit"
+						>
+							<span>Send Message</span>
+							<i class="fas fa-paper-plane"></i>
+						</button>
+						<div class="form-status" id="form-status"></div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================== FOOTER ===================== -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div class="footer-brand">
+						<a href="#hero" class="nav-logo"
+							>&lt;Girish S K /&gt;</a
+						>
+						<p>
+							Building scalable, secure web apps &amp; AI-driven
+							solutions.
+						</p>
+					</div>
+					<div class="footer-links">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#resume">Resume</a></li>
+						</ul>
+					</div>
+					<div class="footer-social">
+						<h4>Connect</h4>
+						<div class="social-links">
+							<a
+								href="https://github.com/Girishsk18"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitHub"
+								><i class="fab fa-github"></i
+							></a>
+							<a
+								href="https://linkedin.com/Girish-kambar"
+								target="_blank"
+								rel="noopener"
+								aria-label="LinkedIn"
+								><i class="fab fa-linkedin-in"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2026 Girish S K. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ===================== INSTAGRAM-STYLE PROFILE MODAL ===================== -->
+		<div id="insta-modal" class="insta-modal" aria-hidden="true" role="dialog">
+			<div class="insta-modal-backdrop" id="insta-modal-backdrop"></div>
+			<div class="insta-modal-dialog">
+				<!-- Instagram-style Menu View -->
+				<div class="insta-view" id="insta-menu-view">
+					<div class="insta-modal-header">
+						<div class="insta-mini-avatar">
+							<img id="insta-mini-thumb" src="images/profile.jpg" alt="Current Avatar" />
+						</div>
+						<h3>Change Profile Photo</h3>
+						<p>Customize your profile picture like Instagram</p>
+					</div>
+					<div class="insta-menu-actions">
+						<button type="button" class="insta-action-btn insta-primary" id="insta-btn-upload">
+							<i class="fas fa-cloud-upload-alt"></i> Upload New Photo
+						</button>
+						<button type="button" class="insta-action-btn insta-secondary" id="insta-btn-edit">
+							<i class="fas fa-sliders-h"></i> Edit / Filter Current Photo
+						</button>
+						<button type="button" class="insta-action-btn insta-danger" id="insta-btn-remove">
+							<i class="fas fa-trash-alt"></i> Remove Current Photo
+						</button>
+						<button type="button" class="insta-action-btn insta-cancel" id="insta-btn-close">
+							Cancel
+						</button>
+					</div>
+				</div>
+
+				<!-- Instagram-style Editor View -->
+				<div class="insta-view" id="insta-editor-view" style="display: none;">
+					<div class="insta-modal-header">
+						<h3>Edit Profile Picture</h3>
+						<p>Zoom, adjust, and apply Instagram filters</p>
+					</div>
+					
+					<div class="insta-editor-body">
+						<div class="insta-preview-wrapper">
+							<div class="insta-preview-ring"></div>
+							<div class="insta-preview-viewport">
+								<img id="insta-preview-target" src="images/profile.jpg" alt="Edit Preview" class="filter-normal" />
+							</div>
+						</div>
+
+						<div class="insta-controls">
+							<div class="insta-control-group">
+								<label for="insta-zoom-slider"><i class="fas fa-search-plus"></i> Zoom: <span id="insta-zoom-val">100%</span></label>
+								<input type="range" id="insta-zoom-slider" min="100" max="250" value="100" />
+							</div>
+
+							<div class="insta-filters-title">
+								<i class="fas fa-magic"></i> Filters
+							</div>
+							<div class="insta-filters-list">
+								<button type="button" class="filter-chip active" data-filter="normal">Normal</button>
+								<button type="button" class="filter-chip" data-filter="clarendon">Clarendon</button>
+								<button type="button" class="filter-chip" data-filter="juno">Juno</button>
+								<button type="button" class="filter-chip" data-filter="lark">Lark</button>
+								<button type="button" class="filter-chip" data-filter="reyes">Vintage</button>
+								<button type="button" class="filter-chip" data-filter="moon">B &amp; W</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="insta-editor-actions">
+						<button type="button" class="insta-action-btn insta-primary" id="insta-btn-save">
+							<i class="fas fa-check"></i> Save &amp; Set Photo
+						</button>
+						<button type="button" class="insta-action-btn insta-secondary" id="insta-btn-download">
+							<i class="fas fa-download"></i> Download Image
+						</button>
+						<button type="button" class="insta-action-btn insta-cancel" id="insta-btn-back">
+							Back
+						</button>
+					</div>
+				</div>
+
+				<input type="file" id="insta-file-picker" accept="image/*" style="display: none;" />
+			</div>
+		</div>
+
+		<!-- Back to Top -->
+		<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+
+		<script src="js/main.js?v=2"></script>
+	</body>
+</html>

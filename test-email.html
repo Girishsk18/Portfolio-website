@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form Test</title>
+		<style>
+			body {
+				font-family: Arial;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background: #1a1a2e;
+				color: #fff;
+			}
+			.box {
+				text-align: center;
+				padding: 40px;
+				background: #16213e;
+				border-radius: 16px;
+			}
+			button {
+				padding: 14px 32px;
+				font-size: 18px;
+				background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+				color: #fff;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			button:hover {
+				transform: scale(1.05);
+			}
+			#result {
+				margin-top: 20px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>📧 Test Your Contact Form</h1>
+			<p>Click the button to send a test message to your email</p>
+			<br />
+			<button onclick="sendTest()">Send Test Email</button>
+			<div id="result"></div>
+		</div>
+
+		<script>
+			async function sendTest() {
+				const btn = document.querySelector("button");
+				const result = document.getElementById("result");
+				btn.disabled = true;
+				btn.textContent = "Sending...";
+				result.textContent = "";
+
+				try {
+					const response = await fetch(
+						"https://api.web3forms.com/submit",
+						{
+							method: "POST",
+							headers: { "Content-Type": "application/json" },
+							body: JSON.stringify({
+								access_key:
+									"b26226b5-bc36-44b2-8c84-6c1e3c04ff14",
+								name: "Test User",
+								email: "test@portfolio.com",
+								subject: "🎉 Portfolio Contact Form Test",
+								message:
+									"Hey Girish! This is a test message from your portfolio contact form. If you received this email, your contact form is working perfectly!",
+							}),
+						}
+					);
+
+					const data = await response.json();
+
+					if (data.success) {
+						result.innerHTML =
+							"✅ <strong>Message sent! Check your email (girishkambar855@gmail.com)</strong>";
+						result.style.color = "#4ade80";
+					} else {
+						result.innerHTML =
+							"❌ Failed: " + (data.message || "Unknown error");
+						result.style.color = "#f87171";
+					}
+				} catch (err) {
+					result.innerHTML = "❌ Error: " + err.message;
+					result.style.color = "#f87171";
+				}
+
+				btn.disabled = false;
+				btn.textContent = "Send Test Email";
+			}
+		</script>
+	</body>
+</html>
